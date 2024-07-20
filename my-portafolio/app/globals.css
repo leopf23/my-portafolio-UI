@@ -20,8 +20,29 @@ body {
   background-color: #fff;
 }
 
+
+.scroll-snap-container {
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  height: 100vh; /* Full height for scrolling */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.scroll-snap-item {
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  aspect-ratio: 4/1;
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  
 }
