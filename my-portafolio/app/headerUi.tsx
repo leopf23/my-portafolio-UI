@@ -7,10 +7,9 @@ import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'About me', href: '#' },
+  { name: 'Skills', href: '#' },
+  { name: 'Portafolio', href: '#' },
 ];
 
 export default function HeaderUi() {
@@ -18,7 +17,7 @@ export default function HeaderUi() {
 
   return (
     <header className="bg-white">
-    <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-16">
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
@@ -37,7 +36,7 @@ export default function HeaderUi() {
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
         {navigation.map((item) => (
-          <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+          <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 hover:text-[#03249C] text-gray-900">
             {item.name}
           </a>
         ))}
