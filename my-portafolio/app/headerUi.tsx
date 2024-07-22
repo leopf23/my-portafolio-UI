@@ -4,6 +4,7 @@
 
 import React, { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
+import { Switch } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
@@ -14,6 +15,9 @@ const navigation = [
 
 export default function HeaderUi() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // variable switch
+  const [enabled, setEnabled] = useState(false)
+
 
   return (
     <header className="bg-white">
@@ -43,6 +47,14 @@ export default function HeaderUi() {
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          {/* Dark mode switch */}
+          <Switch
+              checked={enabled}
+              onChange={setEnabled}
+              className="group inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition data-[checked]:bg-blue-600"
+            >
+           <span className="size-4 translate-x-1 rounded-full bg-white transition group-data-[checked]:translate-x-6" />
+           </Switch>
           {/* Log in <span aria-hidden="true">&rarr;</span> */}
         </a>
       </div>

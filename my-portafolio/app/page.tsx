@@ -42,7 +42,7 @@ export default function Home() {
 
           {/* Skill */}
           <div className="scroll-snap-item h-screen md:p-36 p-10 animate-on-scroll">
-            <p className="text-[50px] font-semibold">Skill</p>
+            <p className="text-[50px] font-semibold">PROFESSIONAL SKILLS</p>
           </div>
 
           {/* Portafolio */}
