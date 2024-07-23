@@ -14,9 +14,7 @@ export default function Skill() {
           alt="Picture of the author"
         />
       </div>
-      <p className="text-[1.5rem] mb-10 text-blue font-semibold">
-        PROFESSIONAL SKILLS
-      </p>
+      <p className="text-[1.5rem] mb-10 text-blue font-semibold">PROFESSIONAL SKILLS</p>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
           <CardSkills 

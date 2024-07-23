@@ -5,6 +5,7 @@ import 'animate.css';
 import Banner from "./banner";
 import About from "./about";
 import Skill from "./skill";
+import Portafolio from "./portafolio";
 
 
 export default function Home() {
@@ -44,16 +45,13 @@ export default function Home() {
           </div>
 
           {/* Skill */}
-         
           <div className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
-            <div>
              <Skill/>
-            </div>
           </div>
 
           {/* Portafolio */}
           <div className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
-            <p className="text-[50px] font-semibold">Portafolio</p>
+              <Portafolio/>
           </div>
         </div>
       </div>
