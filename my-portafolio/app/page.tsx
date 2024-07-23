@@ -4,6 +4,7 @@ import HeaderUi from "./headerUi";
 import 'animate.css';
 import Banner from "./banner";
 import About from "./about";
+import Skill from "./skill";
 
 export default function Home() {
   useEffect(() => {
@@ -36,17 +37,20 @@ export default function Home() {
           <Banner />
 
           {/* About me */}
-          <div className="scroll-snap-item h-screen md:p-36 p-10 animate-on-scroll ">
+          <div className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
             <About/>
           </div>
 
           {/* Skill */}
-          <div className="scroll-snap-item h-screen md:p-36 p-10 animate-on-scroll">
-            <p className="text-[50px] font-semibold">PROFESSIONAL SKILLS</p>
+         
+          <div className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
+            <div>
+             <Skill/>
+            </div>
           </div>
 
           {/* Portafolio */}
-          <div className="scroll-snap-item h-screen md:p-36 p-10 animate-on-scroll">
+          <div className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
             <p className="text-[50px] font-semibold">Portafolio</p>
           </div>
         </div>

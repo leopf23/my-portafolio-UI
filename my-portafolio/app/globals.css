@@ -35,7 +35,7 @@ body {
 .scroll-snap-item {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  aspect-ratio: 4/1;
+  /* aspect-ratio: 4/1; */
 }
 
 
