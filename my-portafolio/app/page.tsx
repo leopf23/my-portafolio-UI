@@ -6,6 +6,7 @@ import Banner from "./banner";
 import About from "./about";
 import Skill from "./skill";
 
+
 export default function Home() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -31,6 +32,7 @@ export default function Home() {
   return (
     <main>
       <HeaderUi />
+    
       <div>
         <div className="scroll-snap-container h-screen">
           {/* Img Banner Text */}

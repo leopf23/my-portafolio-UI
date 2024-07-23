@@ -17,12 +17,13 @@ export default function Skill() {
       <p className="text-[1.5rem] mb-10 text-blue font-semibold">
         PROFESSIONAL SKILLS
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
           <CardSkills 
             key={index}
             title={skill.title}
             description={skill.description}
+            imageSrc={skill.imageSrc} // Añadir la propiedad imageSrc aquí
           />
         ))}
       </div>
