@@ -20,7 +20,7 @@ export default function HeaderUi() {
 
 
   return (
-    <header className="bg-white">
+    <header className="bg-white dark:bg-blueDark">
     <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-16">
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">
@@ -38,9 +38,10 @@ export default function HeaderUi() {
           <Bars3Icon aria-hidden="true" className="h-6 w-6" />
         </button>
       </div>
+      {/* map items */}
       <div className="hidden lg:flex lg:gap-x-12">
         {navigation.map((item) => (
-          <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 hover:text-[#03249C] text-gray-900">
+          <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 hover:text-[#03249C] dark:text-blueText text-gray-900">
             {item.name}
           </a>
         ))}
