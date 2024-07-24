@@ -14,9 +14,26 @@ const navigation = [
 ];
 
 export default function HeaderUi() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   // variable switch
   const [enabled, setEnabled] = useState(false)
+
+  function toggleDarkMode() {
+    const html = document.querySelector('html')
+    const current = localStorage.getItem("theme")
+    if (!current) {
+      localStorage.setItem("theme", "dark")  
+      html?.classList.add("dark")
+      setEnabled(true)
+    } else {
+      localStorage.removeItem("theme")  
+      html?.classList.remove("dark")
+      setEnabled(false)
+    }
+  }
+
+  
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 
   return (
@@ -51,7 +68,7 @@ export default function HeaderUi() {
           {/* Dark mode switch */}
           <Switch
               checked={enabled}
-              onChange={setEnabled}
+              onChange={toggleDarkMode}
               className="group inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition data-[checked]:bg-blue-600"
             >
            <span className="size-4 translate-x-1 rounded-full bg-white transition group-data-[checked]:translate-x-6" />

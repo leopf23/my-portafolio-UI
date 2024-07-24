@@ -9,17 +9,9 @@ import Portafolio from "./portafolio";
 
 
 export default function Home() {
-function toggleDarkMode() {
-  const html = document.querySelector('html')
-  const current = localStorage.getItem("theme")
-  if (!current) {
-    localStorage.setItem("theme", "dark")  
-    html?.classList.add("dark")
-  } else {
-    localStorage.removeItem("theme")  
-    html?.classList.remove("dark")
-  }
-}
+
+
+
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -45,7 +37,6 @@ function toggleDarkMode() {
   return (
     <main className=" bg-white dark:bg-blueDark">
       <HeaderUi />
-      <button onClick={toggleDarkMode}>CHANGE THEME</button>
       <div>
         <div className="scroll-snap-container h-screen">
           {/* Img Banner Text */}

@@ -9,7 +9,7 @@ interface IinfoProps {
 
 export default function CardSkills(props: IinfoProps) {
   return (
-    <div className='flex items-center content-center gap-5 p-[15px] rounded-md border-solid border-[1px] border-[#BAC3E3]'>
+    <div className='flex items-center content-center gap-5 p-[15px] rounded-md border-solid border-[1px] border-[#BAC3E3] dark:border-slate-700'>
       {/* Icon */}
       <div>
         <Image
@@ -23,9 +23,9 @@ export default function CardSkills(props: IinfoProps) {
       {/* Text */}
       <div>
         {/* Title */}
-        <p className='text-[#5a5b5f] text-[0.9rem] font-medium'>{props.title}</p>
+        <p className='text-[#5a5b5f] dark:text-white text-[0.9rem] font-medium'>{props.title}</p>
         {/* Description */}
-        <p className='text-[0.8rem] text-[#818386] leading-7'>
+        <p className='text-[0.8rem] dark:text-gray-400 text-[#818386] leading-7'>
           {props.description}
         </p>
       </div>
