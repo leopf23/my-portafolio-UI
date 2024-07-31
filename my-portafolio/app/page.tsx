@@ -5,7 +5,7 @@ import 'animate.css';
 import Banner from "./banner";
 import About from "./about";
 import Skill from "./skill";
-import Portafolio from "./portafolio";
+import CardPortafolio from "./cardPortafolio";
 
 
 export default function Home() {
@@ -53,8 +53,29 @@ export default function Home() {
           </div>
 
           {/* Portafolio */}
-          <div className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
-              <Portafolio/>
+          <div className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
+          <p className="text-[1.5rem] mb-20 text-blue font-semibold dark:text-blueText ">PROFESSIONAL SKILLS</p>
+             <CardPortafolio 
+              title={"MarketShop"}
+              category={"Sistema Web"}
+              description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+              imageSrc={"/mockup.svg"} projectUrl={"https://www.example.com/project"}/>
+          </div>
+
+          <div className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
+             <CardPortafolio 
+              title={"Bitacoras"}
+              category={"App movil"}
+              description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+              imageSrc={"/mockup.svg"} projectUrl={"https://www.example.com/project"}/>
+          </div>
+
+          <div className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
+             <CardPortafolio 
+              title={"Banco Eterna"}
+              category={"Sistema Web"}
+              description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+              imageSrc={"/mockup.svg"} projectUrl={"https://www.example.com/project"}/>
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function About() {
 
         <div>
 
-          <BtnUi/>
+          <BtnUi title={"Descargar CV"} url={""}/>
         </div>
     </div>
   )
