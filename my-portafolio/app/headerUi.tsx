@@ -71,7 +71,7 @@ export default function HeaderUi() {
               onChange={toggleDarkMode}
               className="group inline-flex h-6 w-11 items-center rounded-full dark:bg-slate-700 bg-gray-200 transition data-[checked]:bg-blue-600"
             >
-           <span className="size-4 translate-x-1 rounded-full dark:bg-green-500 bg-white transition group-data-[checked]:translate-x-6" />
+           <span className="size-4 translate-x-1 rounded-full dark:bg-[#3D9AF4] bg-white transition group-data-[checked]:translate-x-6" />
            </Switch>
           {/* Log in <span aria-hidden="true">&rarr;</span> */}
         </a>
