@@ -8,9 +8,9 @@ import { Switch } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'About me', href: '#' },
-  { name: 'Skills', href: '#' },
-  { name: 'Portafolio', href: '#' },
+  { name: 'About me', href: '#about' },
+  { name: 'Skills', href: '#skill' },
+  { name: 'Portafolio', href: '#portafolio' },
 ];
 
 export default function HeaderUi() {
@@ -37,7 +37,7 @@ export default function HeaderUi() {
 
 
   return (
-    <header className="bg-white dark:bg-blueDark">
+    <header id="header" className="bg-white dark:bg-blueDark fixed top-0 left-0 w-full z-50 transition-shadow duration-300">
     <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-16">
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">

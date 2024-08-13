@@ -19,6 +19,7 @@ const config: Config = {
         black: '#000',
         blue:  '#03249C',
         blueDark: '#1B1B22',
+        blueLight:'#1E86EB',
         blueText: '#3D9AF4',
         white: '#fff',
       },

@@ -11,7 +11,7 @@ export default function banner() {
                 <g id="Grupo_2" data-name="Grupo 2" transform="translate(105.5 71.945)">
                   <text className="tracking-in-expand fill-white dark:fill-blueDark stroke-cyan-800  dark:stroke-blueText" id="DESIGNER" transform="translate(-104.5 146.055)"  stroke-width="1" font-size="182" font-family="BMWMotorrad-Bold, BMW Motorrad" font-weight="700" opacity="0.18"><tspan x="0" y="0">DEVELOPER</tspan></text>
                   <text className="animate__animated animate__fadeIn fill-blue dark:fill-blueText" id="Designer-2" data-name="Designer" transform="translate(353 145.555)"  font-size="126" font-family="BMWMotorrad-Bold, BMW Motorrad" font-weight="700" letter-spacing="0.059em"><tspan x="-348.705" y="0">DESIGNER</tspan></text>
-                  <text className="animate__animated  animate__fadeIn fill-blue dark:fill-white" id="UI_UX" data-name="UI/UX" transform="translate(8 30.555)" fill="#03249c" font-size="11" font-family="DREAMS"><tspan x="0" y="0">UI/UX</tspan></text>
+                  <text className="animate__animated  animate__fadeIn fill-blue dark:fill-white" id="UI_UX" data-name="UI/UX" transform="translate(8 30.555)" fill="#03249c" font-size="11" font-family="DREAMS"><tspan x="0" y="0">UI/UX </tspan></text>
                   <g id="Grupo_58" data-name="Grupo 58" transform="translate(-4)">
                       <g className='stroke-blue dark:stroke-blueText' id="Rectángulo_10" data-name="Rectángulo 10" transform="translate(345.5 160.055)" fill="none"  stroke-width="1.3">
                         <rect width="356" height="58" stroke="none"/>

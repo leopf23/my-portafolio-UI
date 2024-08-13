@@ -43,17 +43,17 @@ export default function Home() {
           <Banner />
 
           {/* About me */}
-          <div className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
+          <div id="about" className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
             <About/>
           </div>
 
           {/* Skill */}
-          <div className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
+          <div id="skill" className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
              <Skill/>
           </div>
 
           {/* Portafolio */}
-          <div className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
+          <div id="portafolio" className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
           <p className="text-[1.5rem] mb-20 text-blue font-semibold dark:text-blueText ">PROFESSIONAL SKILLS</p>
              <CardPortafolio 
               title={"MarketShop"}

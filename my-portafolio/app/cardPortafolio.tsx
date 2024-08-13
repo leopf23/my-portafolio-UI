@@ -21,9 +21,9 @@ export default function cardPortafolio(props: IportafolioProps) {
 
       {/* Description */}
       <div>
-        <h1 className='mb-1 text-3xl font-semibold'>{props.title}</h1>
-        <span className='text-blue font-light text-[0.9rem]'>{props.category}</span>
-        <p className='mt-2 mb-5 leading-9 text-[0.9rem] text-slate-600 font-light md:w-[600px] w-auto'>
+        <h1 className='dark:text-blueLight mb-1 text-3xl font-semibold'>{props.title}</h1>
+        <span className='dark:text-white text-blue font-light text-[0.9rem]'>{props.category}</span>
+        <p className='mt-2 mb-5 leading-9 text-[0.9rem] text-slate-600 dark:text-white font-light md:w-[600px] w-auto'>
           {props.description}
         </p>
         <BtnUi title={'Ver proyecto'} url={props.projectUrl} /> {/* Usar la URL de la prop */}
