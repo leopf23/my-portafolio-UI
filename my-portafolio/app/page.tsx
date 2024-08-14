@@ -40,7 +40,9 @@ export default function Home() {
       <div>
         <div className="scroll-snap-container h-screen">
           {/* Img Banner Text */}
-          <Banner />
+          <div id="banner">
+           <Banner />
+          </div>
 
           {/* About me */}
           <div id="about" className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
