@@ -3,11 +3,13 @@
     background-position: right bottom;
     background-size: 200% 100%;
     transition: background-position 0.5s ease, background-color 0.5s ease;
+
   }
   
   .btn-transition:hover {
     background-position: left bottom;
     background-color: blue;
+
   }
   
   .button {

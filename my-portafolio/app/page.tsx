@@ -45,39 +45,45 @@ export default function Home() {
           </div>
 
           {/* About me */}
-          <div id="about" className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
+          <div id="about" className="scroll-snap-item h-screen p-8 md:p-10 lg:p-[12rem] 2xl:p-[19rem] animate-on-scroll ">
             <About/>
           </div>
 
           {/* Skill */}
-          <div id="skill" className="scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll ">
+          <div id="skill" className="scroll-snap-item h-screen p-8 md:p-10 lg:p-[12rem] 2xl:p-[19rem] animate-on-scroll ">
              <Skill/>
           </div>
 
           {/* Portafolio */}
-          <div id="portafolio" className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
-          <p className="text-[1.5rem] mb-20 text-blue font-semibold dark:text-blueText ">PROFESSIONAL SKILLS</p>
+          <div id="portafolio" className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-[12rem] 2xl:p-[19rem] animate-on-scroll">
+          <p className="text-[1.5rem] mb-10 text-blue font-semibold dark:text-blueText ">Portafolio</p>
              <CardPortafolio 
               title={"MarketShop"}
               category={"Sistema Web"}
               description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
-              imageSrc={"/2mockup.jpg"} projectUrl={"https://www.example.com/project"}/>
+              imageSrc={"/2mockup.jpg"} projectUrl={"https://www.example.com/project"}
+              align="left" 
+              />
           </div>
 
-          <div className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
+          <div className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-[10rem] 2xl:p-[32rem] animate-on-scroll">
              <CardPortafolio 
               title={"Bitacoras"}
               category={"App movil"}
               description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
-              imageSrc={"/mockup.svg"} projectUrl={"https://www.example.com/project"}/>
+              imageSrc={"/mockup.svg"} projectUrl={"https://www.example.com/project"}
+              align="right" 
+              />
           </div>
 
-          <div className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-32 animate-on-scroll">
+          <div className="content-center scroll-snap-item h-screen p-8 md:p-10 lg:p-[12rem] 2xl:p-[19rem] animate-on-scroll">
              <CardPortafolio 
               title={"Banco Eterna"}
               category={"Sistema Web"}
               description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
-              imageSrc={"/mockup.svg"} projectUrl={"https://www.example.com/project"}/>
+              imageSrc={"/mockup.svg"} projectUrl={"https://www.example.com/project"}
+              align="left" // O "left"
+              />
           </div>
         </div>
       </div>

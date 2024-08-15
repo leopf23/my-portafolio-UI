@@ -9,7 +9,7 @@ interface IinfoProps {
 
 export default function CardSkills(props: IinfoProps) {
   return (
-    <div className='flex items-center content-center gap-5 p-[15px] rounded-md border-solid border-[1px] border-[#BAC3E3] dark:border-slate-700'>
+    <div className='hover:shadow-custom-blue flex items-center content-center gap-5 p-[15px] rounded-md border-solid border-[1px] border-[#BAC3E3] dark:border-slate-700'>
       {/* Icon */}
       <div>
         <Image

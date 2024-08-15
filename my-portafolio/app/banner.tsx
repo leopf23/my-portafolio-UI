@@ -4,7 +4,7 @@ import 'animate.css';
 export default function banner() {
   return (
     <div className="scroll-snap-item"> 
-        <div className="bg-[url('/../back.svg')] bg-no-repeat bg-[length:86%_auto]  bg-[position:-34px_80px]">
+        <div className="bg-[url('/../back.svg')]  bg-no-repeat bg-[length:86%_auto]  bg-[position:-34px_80px]">
             <div className="w-full text-center p-5 md:p-40 h-[900px] dark:bg-blueDark ">
               <div className= "mx-auto h-[250px] w-auto">
               <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="250" viewBox="0 0 986 281">

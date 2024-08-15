@@ -57,11 +57,11 @@ export default function HeaderUi() {
         hasShadow ? 'shadow-md' : ''
       }`}
     >
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-16">
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-[100px] 2xl:px-[0px]">
         <div className="flex lg:flex-1">
           <a href="#banner" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img alt="" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" className="h-8 w-auto" />
+            <img alt="" src="/lpLogo.svg" className="h-8 w-auto" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -91,9 +91,9 @@ export default function HeaderUi() {
             <Switch
               checked={enabled}
               onChange={toggleDarkMode}
-              className="group inline-flex h-6 w-11 items-center rounded-full dark:bg-slate-700 bg-gray-200 transition data-[checked]:bg-blue-600"
+              className="group inline-flex h-6 w-11 items-center rounded-full dark:bg-[#3D9AF4] bg-gray-300 transition data-[checked]:bg-blue-600"
             >
-              <span className="size-4 translate-x-1 rounded-full dark:bg-[#3D9AF4] bg-white transition group-data-[checked]:translate-x-6" />
+              <span className="size-4 translate-x-1 rounded-full dark:bg-white bg-white transition group-data-[checked]:translate-x-6" />
             </Switch>
             <MoonIcon className="h-5 w-5 dark:text-[#3D9AF4] text-gray-400" />
            </div>
@@ -102,6 +102,8 @@ export default function HeaderUi() {
           </a>
         </div>
       </nav>
+
+      {/* menu mobile  */}
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-slate-700  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -132,6 +134,18 @@ export default function HeaderUi() {
                   </a>
                 ))}
               </div>
+
+              <div className='flex gap-3 items-center'>
+
+            <Switch
+              checked={enabled}
+              onChange={toggleDarkMode}
+              className="group inline-flex h-6 w-11 items-center rounded-full dark:bg-[#3D9AF4] bg-gray-300 transition data-[checked]:bg-blue-600"
+            >
+              <span className="size-4 translate-x-1 rounded-full dark:bg-white bg-white transition group-data-[checked]:translate-x-6" />
+            </Switch>
+            <MoonIcon className="h-5 w-5 dark:text-[#3D9AF4] text-gray-400" />
+           </div>
             </div>
           </div>
         </DialogPanel>
