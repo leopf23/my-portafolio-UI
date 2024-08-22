@@ -8,6 +8,8 @@ export default function About() {
 
   return (
     <div className='text-[1.1rem]'>
+
+      {/* point svg */}
       <div className='absolute right-[15%] top-[200px]'>
          <svg xmlns="http://www.w3.org/2000/svg" width="114" height="117" viewBox="0 0 214 217">
           <g id="Grupo_41" data-name="Grupo 41" transform="translate(0 0.058)">

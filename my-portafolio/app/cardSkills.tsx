@@ -14,8 +14,8 @@ export default function CardSkills(props: IinfoProps) {
       <div>
         <Image
           src={props.imageSrc}
-          width={50}
-          height={50}
+          width={40}
+          height={40}
           alt={props.title}
         />
       </div>

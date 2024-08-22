@@ -16,14 +16,13 @@ export default function Skill() {
       <p className="text-[1.5rem] mb-10 text-blue font-semibold dark:text-blueText ">PROFESSIONAL SKILLS</p>
 
       <div className='h-[500px] overflow-scroll'>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5  2xl:grid-cols-5 gap-6">
         {skills.map((skill, index) => (
           <CardSkills 
             key={index}
             title={skill.title}
-            description={skill.description}
             imageSrc={skill.imageSrc} // Añadir la propiedad imageSrc aquí
-          />
+            description={''}          />
         ))}
       </div>
       </div>
